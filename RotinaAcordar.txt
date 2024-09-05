@@ -1,0 +1,30 @@
+algoritmo "RotinaAoAcordar"
+var
+    despertadorTocou : logico
+    prontoParaLevantarse : logico
+
+inicio
+    // Passo 1: Despertador toca
+    despertadorTocou <- verdadeiro
+
+    // Passo 2: Verifica se o despertador tocou
+    se (despertadorTocou = verdadeiro) entao
+        escreva("Despertador tocando...")
+
+        // Passo 3: Acorda e decide se vai levantar
+        escreva("Abrir os olhos")
+        prontoParaLevantarse <- verdadeiro
+        
+        // Passo 4: Levantar da cama
+        se (prontoParaLevantarse = verdadeiro) entao
+            escreva("Levantar da cama")
+            escreva("Ir ao banheiro")
+        senao
+            escreva("Tentar dormir mais um pouco")
+        fimse
+    fimse
+
+    // Passo 5: Continua o dia
+    escreva("Iniciar a rotina matinal")
+    
+fimalgoritmo
